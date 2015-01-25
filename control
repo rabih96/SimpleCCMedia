@@ -1,7 +1,7 @@
 Package: com.rabih96.sccm
 Name: SimpleCCMedia
 Depends: mobilesubstrate, firmware (>=8.0), com.saurik.substrate.safemode
-Version: 1.0
+Version: 1.1
 Architecture: iphoneos-arm
 Description: Make your music control simpler in CC
 Maintainer: Rabih M.

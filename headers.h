@@ -79,7 +79,13 @@
 @interface SBCCMediaControlsSectionController : SBControlCenterSectionViewController <MPUSystemMediaControlsDelegate>
 @end
 
-@interface MPUChronologicalProgressView : UIView
+@interface MPUNowPlayingIndicatorView : UIControl
+@property(retain, nonatomic) UIColor *levelGuttersColor;
+@end
+
+@interface MPUChronologicalProgressView : UIView{
+	MPUNowPlayingIndicatorView *_indicatorView;
+}
 @end
 
 @interface MPUMediaControlsVolumeView : UIView
@@ -88,6 +94,7 @@
 @interface MPUNowPlayingTitlesView : UIView
 @property(copy, nonatomic) NSString *titleText;
 @property(copy, nonatomic) NSString *artistText;
+@property(copy, nonatomic) NSString *albumText;
 @end
 
 @interface MPUMediaControlsTitlesView : MPUNowPlayingTitlesView
