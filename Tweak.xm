@@ -104,7 +104,8 @@ static CGFloat getCCMHeight(){
 				SBMediaController *mediaController = [%c(SBMediaController) sharedInstance];
 				NSString *defaultDisplayName = [[[[mediaController nowPlayingApplication] bundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
 				[self.trackInformationView setTitleText:[NSString stringWithFormat:@"%@", defaultDisplayName]];
-		  }
+		  	}
+			
 			//make the ui look normal thats what the tweak is all about (here we will solve each case  and that took some time)
 			if      ( addC && !addT && !addSI) {self.transportControlsView.frame = make(self.transportControlsView,-20);}
 			if      (!addC &&  addT && !addSI) {self.timeInformationView.frame   = make(self.timeInformationView,0);}
